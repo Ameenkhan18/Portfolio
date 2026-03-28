@@ -63,7 +63,7 @@
   transform: scale(1);
   min-width: calc(100vw + 5000px);
   border-radius: 5000px;
-  min-height: calc(100vh + 500px);
+  min-height: calc(var(--vh, 100vh) + 500px);
   box-shadow: none;
 }
 .loading-clicked .loading-button {
