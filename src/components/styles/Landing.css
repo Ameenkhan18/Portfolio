@@ -99,7 +99,7 @@
 }
 .character-model {
   height: 80%;
-  height: 80vh;
+  height: calc(var(--vh, 1vh) * 80);
   position: absolute;
   max-width: 1920px;
   max-height: 1080px;
@@ -271,7 +271,7 @@ h2.landing-info-h2 {
 }
 @media screen and (min-width: 768px) {
   .character-model {
-    height: 80vh;
+    height: calc(var(--vh, 1vh) * 80);
   }
   .landing-intro h2 {
     font-size: 25px;
@@ -293,7 +293,7 @@ h2.landing-info-h2 {
 }
 @media screen and (min-width: 1025px) {
   .character-model {
-    height: 100vh;
+    height: var(--vh, 100vh);
     bottom: 0;
     z-index: 11;
     position: fixed;
