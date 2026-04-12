@@ -13,14 +13,14 @@ import {
 
 const textureLoader = new THREE.TextureLoader();
 const imageUrls = [
-  "/images/react2.webp",
-  "/images/next2.webp",
-  "/images/node2.webp",
-  "/images/express.webp",
-  "/images/mongo.webp",
-  "/images/mysql.webp",
-  "/images/typescript.webp",
-  "/images/javascript.webp",
+  "/images/tech-java.svg",
+  "/images/tech-springboot.svg",
+  "/images/tech-quarkus.svg",
+  "/images/tech-docker.svg",
+  "/images/tech-kubernetes.svg",
+  "/images/tech-kafka.svg",
+  "/images/tech-python.svg",
+  "/images/tech-azure.svg",
 ];
 const textures = imageUrls.map((url) => textureLoader.load(url));
 
@@ -204,7 +204,7 @@ const TechStack = () => {
           environmentRotation={[0, 4, 2]}
         />
         <EffectComposer enableNormalPass={false}>
-          <N8AO color="#0f002c" aoRadius={2} intensity={1.15} />
+          <N8AO color="#001a1a" aoRadius={2} intensity={1.15} />
         </EffectComposer>
       </Canvas>
     </div>
