@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="350" viewBox="0 0 600 350">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060d0d"/>
+      <stop offset="100%" style="stop-color:#0a1f1f"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="350" fill="url(#bg2)"/>
+
+  <!-- Title -->
+  <text x="20" y="30" font-family="monospace" font-size="12" fill="#2dd4bf" font-weight="bold">Cloud-Native Booking Platform</text>
+  <line x1="20" y1="38" x2="580" y2="38" stroke="#2dd4bf" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Kubernetes badge -->
+  <rect x="460" y="14" width="120" height="20" rx="10" fill="#2dd4bf20" stroke="#2dd4bf" stroke-width="0.5"/>
+  <text x="490" y="28" font-family="monospace" font-size="9" fill="#2dd4bf">☸ Kubernetes</text>
+
+  <!-- API Gateway -->
+  <rect x="230" y="50" width="140" height="40" rx="6" fill="#0f2a2a" stroke="#2dd4bf" stroke-width="1"/>
+  <text x="252" y="68" font-family="monospace" font-size="10" fill="#2dd4bf">API Gateway</text>
+  <text x="248" y="82" font-family="monospace" font-size="8" fill="#7ec8c8">REST + GraphQL</text>
+
+  <!-- Arrows down -->
+  <line x1="270" y1="90" x2="120" y2="130" stroke="#2dd4bf" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+  <line x1="300" y1="90" x2="300" y2="130" stroke="#2dd4bf" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+  <line x1="330" y1="90" x2="480" y2="130" stroke="#2dd4bf" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+
+  <!-- Microservice 1 -->
+  <rect x="40" y="130" width="160" height="45" rx="6" fill="#0f2a2a" stroke="#14b8a6" stroke-width="1"/>
+  <text x="60" y="150" font-family="monospace" font-size="10" fill="#2dd4bf">Booking Service</text>
+  <text x="60" y="164" font-family="monospace" font-size="8" fill="#7ec8c8">Spring Boot · OAuth2</text>
+
+  <!-- Microservice 2 -->
+  <rect x="220" y="130" width="160" height="45" rx="6" fill="#0f2a2a" stroke="#14b8a6" stroke-width="1"/>
+  <text x="235" y="150" font-family="monospace" font-size="10" fill="#2dd4bf">Recommendation</text>
+  <text x="235" y="164" font-family="monospace" font-size="8" fill="#7ec8c8">Spring AI · RAG</text>
+
+  <!-- Microservice 3 -->
+  <rect x="400" y="130" width="160" height="45" rx="6" fill="#0f2a2a" stroke="#14b8a6" stroke-width="1"/>
+  <text x="420" y="150" font-family="monospace" font-size="10" fill="#2dd4bf">Analytics Service</text>
+  <text x="420" y="164" font-family="monospace" font-size="8" fill="#7ec8c8">Apache Spark · ETL</text>
+
+  <!-- Kafka bus -->
+  <rect x="20" y="200" width="560" height="30" rx="4" fill="#2dd4bf15" stroke="#2dd4bf" stroke-width="0.8"/>
+  <text x="240" y="220" font-family="monospace" font-size="10" fill="#2dd4bf">⚡ Apache Kafka Event Bus</text>
+
+  <!-- Arrow lines to Kafka -->
+  <line x1="120" y1="175" x2="120" y2="200" stroke="#2dd4bf" stroke-width="1" opacity="0.5"/>
+  <line x1="300" y1="175" x2="300" y2="200" stroke="#2dd4bf" stroke-width="1" opacity="0.5"/>
+  <line x1="480" y1="175" x2="480" y2="200" stroke="#2dd4bf" stroke-width="1" opacity="0.5"/>
+
+  <!-- Observability row -->
+  <rect x="20" y="248" width="170" height="40" rx="6" fill="#0a1e1e" stroke="#363636" stroke-width="1"/>
+  <text x="36" y="264" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.8">Prometheus</text>
+  <text x="36" y="278" font-family="monospace" font-size="8" fill="#7ec8c8">Metrics collection</text>
+
+  <rect x="205" y="248" width="170" height="40" rx="6" fill="#0a1e1e" stroke="#363636" stroke-width="1"/>
+  <text x="221" y="264" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.8">Grafana</text>
+  <text x="221" y="278" font-family="monospace" font-size="8" fill="#7ec8c8">Real-time dashboards</text>
+
+  <rect x="390" y="248" width="190" height="40" rx="6" fill="#0a1e1e" stroke="#363636" stroke-width="1"/>
+  <text x="406" y="264" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.8">Docker + Kubernetes</text>
+  <text x="406" y="278" font-family="monospace" font-size="8" fill="#7ec8c8">CI/CD · Auto-scaling</text>
+
+  <!-- Stats -->
+  <rect x="20" y="306" width="560" height="28" rx="4" fill="#0a1e1e"/>
+  <text x="36" y="325" font-family="monospace" font-size="9" fill="#a3e635">↓ 45% latency</text>
+  <text x="150" y="325" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.4">|</text>
+  <text x="164" y="325" font-family="monospace" font-size="9" fill="#2dd4bf">100K+ daily events</text>
+  <text x="310" y="325" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.4">|</text>
+  <text x="324" y="325" font-family="monospace" font-size="9" fill="#febc2e">↓ 50% incident time</text>
+  <text x="472" y="325" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.4">|</text>
+  <text x="486" y="325" font-family="monospace" font-size="9" fill="#2dd4bf">H-Scale</text>
+</svg>

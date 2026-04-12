@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="350" viewBox="0 0 600 350">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060d0d"/>
+      <stop offset="100%" style="stop-color:#0a1f1f"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="350" fill="url(#bg3)"/>
+
+  <!-- Header -->
+  <rect width="600" height="36" fill="#0a1e1e"/>
+  <text x="20" y="23" font-family="monospace" font-size="11" fill="#2dd4bf" font-weight="bold">Workflow Orchestration Dashboard</text>
+  <rect x="430" y="8" width="80" height="20" rx="10" fill="#a3e63520" stroke="#a3e635" stroke-width="0.5"/>
+  <text x="452" y="22" font-family="monospace" font-size="9" fill="#a3e635">● LIVE</text>
+  <rect x="520" y="8" width="60" height="20" rx="10" fill="#2dd4bf20" stroke="#2dd4bf" stroke-width="0.5"/>
+  <text x="530" y="22" font-family="monospace" font-size="9" fill="#2dd4bf">Temporal</text>
+
+  <!-- Workflow title -->
+  <text x="20" y="58" font-family="monospace" font-size="10" fill="#f8fafc" opacity="0.6">Workflow: LoanApprovalFlow</text>
+  <text x="400" y="58" font-family="monospace" font-size="10" fill="#a3e635">99.9% success rate</text>
+
+  <!-- Pipeline steps -->
+  <!-- Step 1 -->
+  <rect x="20" y="68" width="90" height="50" rx="6" fill="#0f2a2a" stroke="#2dd4bf" stroke-width="1.5"/>
+  <text x="30" y="88" font-family="monospace" font-size="8" fill="#2dd4bf">▶ START</text>
+  <text x="30" y="102" font-family="monospace" font-size="8" fill="#7ec8c8">Receive</text>
+  <text x="30" y="113" font-family="monospace" font-size="8" fill="#7ec8c8">YAML/JSON</text>
+
+  <line x1="110" y1="93" x2="135" y2="93" stroke="#2dd4bf" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <polygon points="132,89 140,93 132,97" fill="#2dd4bf"/>
+
+  <!-- Step 2 -->
+  <rect x="140" y="68" width="90" height="50" rx="6" fill="#0f2a2a" stroke="#14b8a6" stroke-width="1"/>
+  <text x="150" y="88" font-family="monospace" font-size="8" fill="#2dd4bf">⚙ VALIDATE</text>
+  <text x="150" y="102" font-family="monospace" font-size="8" fill="#7ec8c8">Parse &amp;</text>
+  <text x="150" y="113" font-family="monospace" font-size="8" fill="#7ec8c8">Validate Def</text>
+
+  <line x1="230" y1="93" x2="255" y2="93" stroke="#14b8a6" stroke-width="1.5"/>
+  <polygon points="252,89 260,93 252,97" fill="#14b8a6"/>
+
+  <!-- Step 3 -->
+  <rect x="260" y="68" width="90" height="50" rx="6" fill="#0f2a2a" stroke="#14b8a6" stroke-width="1"/>
+  <text x="270" y="88" font-family="monospace" font-size="8" fill="#2dd4bf">⚡ EXECUTE</text>
+  <text x="270" y="102" font-family="monospace" font-size="8" fill="#7ec8c8">Run Activity</text>
+  <text x="270" y="113" font-family="monospace" font-size="8" fill="#7ec8c8">Workers</text>
+
+  <line x1="350" y1="93" x2="375" y2="93" stroke="#14b8a6" stroke-width="1.5"/>
+  <polygon points="372,89 380,93 372,97" fill="#14b8a6"/>
+
+  <!-- Step 4 -->
+  <rect x="380" y="68" width="90" height="50" rx="6" fill="#0f2a2a" stroke="#14b8a6" stroke-width="1"/>
+  <text x="390" y="88" font-family="monospace" font-size="8" fill="#2dd4bf">◎ OBSERVE</text>
+  <text x="390" y="102" font-family="monospace" font-size="8" fill="#7ec8c8">Monitor</text>
+  <text x="390" y="113" font-family="monospace" font-size="8" fill="#7ec8c8">State</text>
+
+  <line x1="470" y1="93" x2="495" y2="93" stroke="#14b8a6" stroke-width="1.5"/>
+  <polygon points="492,89 500,93 492,97" fill="#14b8a6"/>
+
+  <!-- Step 5 -->
+  <rect x="500" y="68" width="80" height="50" rx="6" fill="#a3e63520" stroke="#a3e635" stroke-width="1.5"/>
+  <text x="510" y="88" font-family="monospace" font-size="8" fill="#a3e635">✓ DONE</text>
+  <text x="510" y="102" font-family="monospace" font-size="8" fill="#7ec8c8">Complete</text>
+  <text x="510" y="113" font-family="monospace" font-size="8" fill="#7ec8c8">&amp; Persist</text>
+
+  <!-- Live instances table -->
+  <rect x="20" y="138" width="560" height="16" rx="3" fill="#0a1e1e"/>
+  <text x="30" y="150" font-family="monospace" font-size="9" fill="#2dd4bf" opacity="0.7">WORKFLOW ID</text>
+  <text x="200" y="150" font-family="monospace" font-size="9" fill="#2dd4bf" opacity="0.7">STATUS</text>
+  <text x="310" y="150" font-family="monospace" font-size="9" fill="#2dd4bf" opacity="0.7">STAGE</text>
+  <text x="430" y="150" font-family="monospace" font-size="9" fill="#2dd4bf" opacity="0.7">DURATION</text>
+  <text x="520" y="150" font-family="monospace" font-size="9" fill="#2dd4bf" opacity="0.7">RETRY</text>
+
+  <!-- Rows -->
+  <rect x="20" y="156" width="560" height="18" rx="2" fill="#0f2a2a" opacity="0.5"/>
+  <text x="30" y="169" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.8">WF-20240112-001</text>
+  <rect x="196" y="159" width="60" height="12" rx="6" fill="#a3e63525"/>
+  <text x="204" y="169" font-family="monospace" font-size="9" fill="#a3e635">RUNNING</text>
+  <text x="310" y="169" font-family="monospace" font-size="9" fill="#7ec8c8">EXECUTE</text>
+  <text x="430" y="169" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.7">2m 14s</text>
+  <text x="520" y="169" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.5">0</text>
+
+  <rect x="20" y="176" width="560" height="18" rx="2"/>
+  <text x="30" y="189" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.8">WF-20240112-002</text>
+  <rect x="196" y="179" width="66" height="12" rx="6" fill="#2dd4bf25"/>
+  <text x="200" y="189" font-family="monospace" font-size="9" fill="#2dd4bf">COMPLETED</text>
+  <text x="310" y="189" font-family="monospace" font-size="9" fill="#7ec8c8">DONE</text>
+  <text x="430" y="189" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.7">5m 02s</text>
+  <text x="520" y="189" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.5">0</text>
+
+  <rect x="20" y="196" width="560" height="18" rx="2" fill="#0f2a2a" opacity="0.5"/>
+  <text x="30" y="209" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.8">WF-20240112-003</text>
+  <rect x="196" y="199" width="50" height="12" rx="6" fill="#ff5f5725"/>
+  <text x="200" y="209" font-family="monospace" font-size="9" fill="#ff5f57">FAILED</text>
+  <text x="310" y="209" font-family="monospace" font-size="9" fill="#7ec8c8">VALIDATE</text>
+  <text x="430" y="209" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.7">0m 08s</text>
+  <text x="520" y="209" font-family="monospace" font-size="9" fill="#febc2e">3</text>
+
+  <rect x="20" y="216" width="560" height="18" rx="2"/>
+  <text x="30" y="229" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.8">WF-20240112-004</text>
+  <rect x="196" y="219" width="56" height="12" rx="6" fill="#febc2e25"/>
+  <text x="200" y="229" font-family="monospace" font-size="9" fill="#febc2e">PENDING</text>
+  <text x="310" y="229" font-family="monospace" font-size="9" fill="#7ec8c8">START</text>
+  <text x="430" y="229" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.7">0m 00s</text>
+  <text x="520" y="229" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.5">0</text>
+
+  <!-- MTTR metric -->
+  <rect x="20" y="248" width="170" height="60" rx="6" fill="#0a1e1e" stroke="#363636" stroke-width="1"/>
+  <text x="36" y="268" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.6">MTTR Reduction</text>
+  <text x="36" y="292" font-family="monospace" font-size="22" fill="#2dd4bf" font-weight="bold">60%</text>
+
+  <rect x="205" y="248" width="170" height="60" rx="6" fill="#0a1e1e" stroke="#363636" stroke-width="1"/>
+  <text x="221" y="268" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.6">Monthly Workflows</text>
+  <text x="221" y="292" font-family="monospace" font-size="22" fill="#a3e635" font-weight="bold">1000+</text>
+
+  <rect x="390" y="248" width="190" height="60" rx="6" fill="#0a1e1e" stroke="#363636" stroke-width="1"/>
+  <text x="406" y="268" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.6">Success Rate</text>
+  <text x="406" y="292" font-family="monospace" font-size="22" fill="#febc2e" font-weight="bold">99.9%</text>
+
+  <!-- Bottom -->
+  <rect x="20" y="320" width="560" height="22" rx="4" fill="#0a1e1e"/>
+  <text x="36" y="335" font-family="monospace" font-size="9" fill="#2dd4bf">Temporal · Java · YAML/JSON · Azure · Observability</text>
+</svg>

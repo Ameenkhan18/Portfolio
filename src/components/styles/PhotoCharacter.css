@@ -1,0 +1,64 @@
+.photo-character {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.photo-frame {
+  position: relative;
+  width: 380px;
+  height: 520px;
+  bottom: 0;
+  overflow: hidden;
+  mask-image: linear-gradient(to top, transparent 0%, black 25%, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, black 25%, black 85%, transparent 100%);
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  filter: grayscale(20%) contrast(1.05);
+}
+
+.photo-glow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(ellipse, rgba(45, 212, 191, 0.25) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(30px);
+  z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .photo-character {
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    z-index: 2;
+  }
+  .photo-frame {
+    width: 260px;
+    height: 360px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .photo-frame {
+    width: 200px;
+    height: 280px;
+  }
+}

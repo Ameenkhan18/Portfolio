@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="350" viewBox="0 0 600 350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060d0d"/>
+      <stop offset="100%" style="stop-color:#0a1f1f"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f2a2a"/>
+      <stop offset="100%" style="stop-color:#0a1e1e"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="350" fill="url(#bg)"/>
+  <!-- Top bar -->
+  <rect width="600" height="36" fill="#0a1e1e"/>
+  <circle cx="18" cy="18" r="5" fill="#ff5f57"/>
+  <circle cx="34" cy="18" r="5" fill="#febc2e"/>
+  <circle cx="50" cy="18" r="5" fill="#28c840"/>
+  <text x="240" y="23" font-family="monospace" font-size="11" fill="#2dd4bf" opacity="0.7">ai-code-reviewer / src / ReviewService.java</text>
+
+  <!-- Code lines -->
+  <rect x="20" y="50" width="260" height="280" rx="6" fill="#0a1e1e" opacity="0.8"/>
+  <!-- Line numbers + code -->
+  <text x="30" y="72" font-family="monospace" font-size="10" fill="#2dd4bf" opacity="0.4">1</text>
+  <text x="50" y="72" font-family="monospace" font-size="10" fill="#7ec8c8">@Path("/review")</text>
+
+  <text x="30" y="88" font-family="monospace" font-size="10" fill="#2dd4bf" opacity="0.4">2</text>
+  <text x="50" y="88" font-family="monospace" font-size="10" fill="#2dd4bf">public class</text>
+  <text x="118" y="88" font-family="monospace" font-size="10" fill="#a3e635">ReviewService</text>
+  <text x="210" y="88" font-family="monospace" font-size="10" fill="#7ec8c8"> {</text>
+
+  <text x="30" y="104" font-family="monospace" font-size="10" fill="#2dd4bf" opacity="0.4">3</text>
+  <text x="50" y="104" font-family="monospace" font-size="10" fill="#2dd4bf">  @Inject</text>
+
+  <text x="30" y="120" font-family="monospace" font-size="10" fill="#2dd4bf" opacity="0.4">4</text>
+  <text x="50" y="120" font-family="monospace" font-size="10" fill="#7ec8c8">  OpenAIClient</text>
+  <text x="142" y="120" font-family="monospace" font-size="10" fill="#f8fafc"> client;</text>
+
+  <!-- Highlight line with issue -->
+  <rect x="20" y="128" width="260" height="14" fill="#ff5f5720"/>
+  <text x="30" y="139" font-family="monospace" font-size="10" fill="#2dd4bf" opacity="0.4">5</text>
+  <text x="50" y="139" font-family="monospace" font-size="10" fill="#fca5a5">  String sql = req.getInput();</text>
+
+  <text x="30" y="155" font-family="monospace" font-size="10" fill="#2dd4bf" opacity="0.4">6</text>
+  <text x="50" y="155" font-family="monospace" font-size="10" fill="#7ec8c8">  GPTResponse</text>
+  <text x="126" y="155" font-family="monospace" font-size="10" fill="#f8fafc"> res =</text>
+
+  <text x="30" y="171" font-family="monospace" font-size="10" fill="#2dd4bf" opacity="0.4">7</text>
+  <text x="50" y="171" font-family="monospace" font-size="10" fill="#2dd4bf">    client</text>
+  <text x="96" y="171" font-family="monospace" font-size="10" fill="#f8fafc">.analyze(sql);</text>
+
+  <text x="30" y="187" font-family="monospace" font-size="10" fill="#2dd4bf" opacity="0.4">8</text>
+  <text x="50" y="187" font-family="monospace" font-size="10" fill="#2dd4bf">  return</text>
+  <text x="96" y="187" font-family="monospace" font-size="10" fill="#f8fafc"> res.getSuggestions();</text>
+
+  <text x="30" y="203" font-family="monospace" font-size="10" fill="#2dd4bf" opacity="0.4">9</text>
+  <text x="50" y="203" font-family="monospace" font-size="10" fill="#7ec8c8">}</text>
+
+  <!-- AI Analysis panel -->
+  <rect x="296" y="50" width="284" height="280" rx="6" fill="#0a1e1e" opacity="0.8"/>
+  <text x="312" y="72" font-family="monospace" font-size="11" fill="#2dd4bf" font-weight="bold">✦ AI Analysis</text>
+  <line x1="312" y1="80" x2="564" y2="80" stroke="#2dd4bf" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Issue 1 -->
+  <rect x="308" y="90" width="264" height="60" rx="4" fill="#ff5f5715" stroke="#ff5f57" stroke-width="0.5"/>
+  <text x="318" y="106" font-family="monospace" font-size="9" fill="#ff5f57">⚠ SQL Injection Risk</text>
+  <text x="318" y="120" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.7">Line 5: Unsanitized user input</text>
+  <text x="318" y="134" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.7">passed directly to query</text>
+  <text x="318" y="145" font-family="monospace" font-size="9" fill="#fca5a5">Severity: HIGH</text>
+
+  <!-- Issue 2 -->
+  <rect x="308" y="162" width="264" height="50" rx="4" fill="#febc2e15" stroke="#febc2e" stroke-width="0.5"/>
+  <text x="318" y="178" font-family="monospace" font-size="9" fill="#febc2e">◆ Performance</text>
+  <text x="318" y="192" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.7">Consider caching GPT responses</text>
+  <text x="318" y="203" font-family="monospace" font-size="9" fill="#febc2e">Severity: MEDIUM</text>
+
+  <!-- Issue 3 -->
+  <rect x="308" y="224" width="264" height="50" rx="4" fill="#2dd4bf15" stroke="#2dd4bf" stroke-width="0.5"/>
+  <text x="318" y="240" font-family="monospace" font-size="9" fill="#2dd4bf">✓ Design Pattern</text>
+  <text x="318" y="254" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.7">CDI injection follows Factory</text>
+  <text x="318" y="265" font-family="monospace" font-size="9" fill="#2dd4bf">pattern correctly</text>
+
+  <!-- Stats bar -->
+  <rect x="20" y="315" width="560" height="24" rx="4" fill="#0a1e1e"/>
+  <text x="36" y="331" font-family="monospace" font-size="9" fill="#2dd4bf">50+ repos monitored</text>
+  <text x="180" y="331" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.5">|</text>
+  <text x="196" y="331" font-family="monospace" font-size="9" fill="#a3e635">GPT-4 powered</text>
+  <text x="310" y="331" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.5">|</text>
+  <text x="326" y="331" font-family="monospace" font-size="9" fill="#febc2e">CI/CD integrated</text>
+  <text x="450" y="331" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.5">|</text>
+  <text x="466" y="331" font-family="monospace" font-size="9" fill="#2dd4bf">JGit + Quarkus</text>
+</svg>

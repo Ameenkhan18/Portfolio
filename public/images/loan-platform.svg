@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="350" viewBox="0 0 600 350">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060d0d"/>
+      <stop offset="100%" style="stop-color:#0a1f1f"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="350" fill="url(#bg4)"/>
+
+  <!-- Header bar -->
+  <rect width="600" height="36" fill="#0a1e1e"/>
+  <text x="20" y="23" font-family="monospace" font-size="11" fill="#2dd4bf" font-weight="bold">Multi-Tenant Loan Management Platform</text>
+  <rect x="490" y="8" width="90" height="20" rx="10" fill="#2dd4bf20" stroke="#2dd4bf" stroke-width="0.5"/>
+  <text x="503" y="22" font-family="monospace" font-size="9" fill="#2dd4bf">Quarkus · Java</text>
+
+  <!-- Tenant selector tabs -->
+  <rect x="20" y="44" width="100" height="22" rx="3" fill="#2dd4bf" />
+  <text x="36" y="59" font-family="monospace" font-size="9" fill="#060d0d" font-weight="bold">Tenant A: HDFC</text>
+
+  <rect x="126" y="44" width="100" height="22" rx="3" fill="#0a1e1e" stroke="#363636" stroke-width="1"/>
+  <text x="142" y="59" font-family="monospace" font-size="9" fill="#7ec8c8">Tenant B: ICICI</text>
+
+  <rect x="232" y="44" width="100" height="22" rx="3" fill="#0a1e1e" stroke="#363636" stroke-width="1"/>
+  <text x="248" y="59" font-family="monospace" font-size="9" fill="#7ec8c8">Tenant C: Axis</text>
+
+  <text x="430" y="59" font-family="monospace" font-size="9" fill="#a3e635">● 500+ concurrent users</text>
+
+  <!-- Main content -->
+  <!-- Left: Loan application pipeline -->
+  <rect x="20" y="76" width="270" height="200" rx="6" fill="#0a1e1e" stroke="#363636" stroke-width="1"/>
+  <text x="36" y="96" font-family="monospace" font-size="10" fill="#2dd4bf">Processing Pipeline</text>
+  <line x1="36" y1="102" x2="274" y2="102" stroke="#2dd4bf" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Pipeline stages -->
+  <rect x="36" y="110" width="240" height="24" rx="4" fill="#2dd4bf20" stroke="#2dd4bf" stroke-width="0.5"/>
+  <circle cx="52" cy="122" r="6" fill="#2dd4bf"/>
+  <text x="54" y="118" font-family="monospace" font-size="8" fill="#060d0d" font-weight="bold">1</text>
+  <text x="66" y="125" font-family="monospace" font-size="9" fill="#f8fafc">Application Ingestion</text>
+  <text x="220" y="125" font-family="monospace" font-size="8" fill="#a3e635">✓</text>
+
+  <line x1="52" y1="134" x2="52" y2="142" stroke="#2dd4bf" stroke-width="1" stroke-dasharray="2,2" opacity="0.5"/>
+
+  <rect x="36" y="142" width="240" height="24" rx="4" fill="#2dd4bf15" stroke="#14b8a6" stroke-width="0.5"/>
+  <circle cx="52" cy="154" r="6" fill="#14b8a6"/>
+  <text x="54" y="150" font-family="monospace" font-size="8" fill="#060d0d" font-weight="bold">2</text>
+  <text x="66" y="157" font-family="monospace" font-size="9" fill="#f8fafc">Credit Verification</text>
+  <text x="220" y="157" font-family="monospace" font-size="8" fill="#a3e635">✓</text>
+
+  <line x1="52" y1="166" x2="52" y2="174" stroke="#14b8a6" stroke-width="1" stroke-dasharray="2,2" opacity="0.5"/>
+
+  <rect x="36" y="174" width="240" height="24" rx="4" fill="#febc2e10" stroke="#febc2e" stroke-width="0.5"/>
+  <circle cx="52" cy="186" r="6" fill="#febc2e"/>
+  <text x="54" y="182" font-family="monospace" font-size="8" fill="#060d0d" font-weight="bold">3</text>
+  <text x="66" y="189" font-family="monospace" font-size="9" fill="#f8fafc">Risk Assessment</text>
+  <text x="215" y="189" font-family="monospace" font-size="8" fill="#febc2e">⟳ Running</text>
+
+  <line x1="52" y1="198" x2="52" y2="206" stroke="#febc2e" stroke-width="1" stroke-dasharray="2,2" opacity="0.5"/>
+
+  <rect x="36" y="206" width="240" height="24" rx="4" fill="#0f2a2a" stroke="#363636" stroke-width="0.5" opacity="0.6"/>
+  <circle cx="52" cy="218" r="6" fill="#363636"/>
+  <text x="54" y="214" font-family="monospace" font-size="8" fill="#7ec8c8" font-weight="bold">4</text>
+  <text x="66" y="221" font-family="monospace" font-size="9" fill="#7ec8c8" opacity="0.6">Approval &amp; Disbursement</text>
+
+  <rect x="36" y="238" width="240" height="24" rx="4" fill="#0f2a2a" stroke="#363636" stroke-width="0.5" opacity="0.6"/>
+  <circle cx="52" cy="250" r="6" fill="#363636"/>
+  <text x="54" y="246" font-family="monospace" font-size="8" fill="#7ec8c8" font-weight="bold">5</text>
+  <text x="66" y="253" font-family="monospace" font-size="9" fill="#7ec8c8" opacity="0.6">Notification &amp; Docs</text>
+
+  <!-- Right panel: stats -->
+  <rect x="306" y="76" width="274" height="200" rx="6" fill="#0a1e1e" stroke="#363636" stroke-width="1"/>
+  <text x="322" y="96" font-family="monospace" font-size="10" fill="#2dd4bf">Tenant Isolation</text>
+  <line x1="322" y1="102" x2="564" y2="102" stroke="#2dd4bf" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Tenant isolation boxes -->
+  <rect x="322" y="110" width="115" height="70" rx="4" fill="#0f2a2a" stroke="#2dd4bf" stroke-width="0.8"/>
+  <text x="338" y="128" font-family="monospace" font-size="9" fill="#2dd4bf">HDFC Schema</text>
+  <text x="338" y="142" font-family="monospace" font-size="8" fill="#7ec8c8">Isolated DB</text>
+  <text x="338" y="156" font-family="monospace" font-size="8" fill="#7ec8c8">RBAC enabled</text>
+  <rect x="342" y="162" width="60" height="10" rx="3" fill="#2dd4bf30"/>
+  <text x="350" y="170" font-family="monospace" font-size="7" fill="#2dd4bf">Role: ADMIN</text>
+
+  <rect x="449" y="110" width="115" height="70" rx="4" fill="#0f2a2a" stroke="#14b8a6" stroke-width="0.8"/>
+  <text x="465" y="128" font-family="monospace" font-size="9" fill="#2dd4bf">ICICI Schema</text>
+  <text x="465" y="142" font-family="monospace" font-size="8" fill="#7ec8c8">Isolated DB</text>
+  <text x="465" y="156" font-family="monospace" font-size="8" fill="#7ec8c8">RBAC enabled</text>
+  <rect x="469" y="162" width="60" height="10" rx="3" fill="#14b8a630"/>
+  <text x="474" y="170" font-family="monospace" font-size="7" fill="#14b8a6">Role: VIEWER</text>
+
+  <!-- Spring DAO layers -->
+  <text x="322" y="202" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.6">Backend Layers</text>
+  <rect x="322" y="208" width="242" height="16" rx="3" fill="#2dd4bf20" stroke="#2dd4bf" stroke-width="0.5"/>
+  <text x="380" y="220" font-family="monospace" font-size="9" fill="#2dd4bf">REST Controller Layer</text>
+
+  <rect x="322" y="228" width="242" height="16" rx="3" fill="#14b8a615" stroke="#14b8a6" stroke-width="0.5"/>
+  <text x="384" y="240" font-family="monospace" font-size="9" fill="#14b8a6">Spring Service Layer</text>
+
+  <rect x="322" y="248" width="242" height="16" rx="3" fill="#0f2a2a" stroke="#363636" stroke-width="0.5"/>
+  <text x="390" y="260" font-family="monospace" font-size="9" fill="#7ec8c8">Spring DAO + Hibernate</text>
+
+  <!-- Stats bar -->
+  <rect x="20" y="290" width="560" height="24" rx="4" fill="#0a1e1e" stroke="#363636" stroke-width="1"/>
+  <text x="36" y="306" font-family="monospace" font-size="9" fill="#a3e635">500+ concurrent users</text>
+  <text x="196" y="306" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.4">|</text>
+  <text x="210" y="306" font-family="monospace" font-size="9" fill="#2dd4bf">0 security vulnerabilities</text>
+  <text x="390" y="306" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.4">|</text>
+  <text x="404" y="306" font-family="monospace" font-size="9" fill="#febc2e">↓ 40% turnaround</text>
+  <text x="530" y="306" font-family="monospace" font-size="9" fill="#f8fafc" opacity="0.4">|</text>
+  <text x="544" y="306" font-family="monospace" font-size="9" fill="#2dd4bf">↓35% API</text>
+
+  <!-- Bottom -->
+  <rect x="20" y="322" width="560" height="22" rx="4" fill="#0a1e1e"/>
+  <text x="36" y="337" font-family="monospace" font-size="9" fill="#7ec8c8" opacity="0.7">Java · Quarkus · Hibernate · Spring Boot · Multi-tenancy · RBAC</text>
+</svg>

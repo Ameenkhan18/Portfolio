@@ -15,43 +15,45 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>B.Tech, Computer Science</h4>
+                <h5>IIT Roorkee</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>2021</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Bachelor of Technology from the Indian Institute of Technology,
+              Roorkee. CGPA: 7.36/10. Built a strong foundation in distributed
+              systems, algorithms, and software engineering.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Software Engineer Intern</h4>
+                <h5>Nucleus Software</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>2024</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Engineered a multi-tenant loan management platform using Java,
+              Quarkus, and Hibernate handling 500+ concurrent users. Implemented
+              a multi-step processing pipeline reducing turnaround by 40% and
+              optimized backend APIs cutting response time by 35%.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Software Engineer</h4>
+                <h5>Nucleus Software</h5>
               </div>
               <h3>NOW</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Architected a distributed workflow execution platform on Temporal
+              orchestrating 1000+ business processes monthly with 99.9% success
+              rate. Built a real-time observability dashboard reducing MTTR by
+              60%. Adopted AI-first workflows improving development velocity by 25%.
             </p>
           </div>
         </div>
