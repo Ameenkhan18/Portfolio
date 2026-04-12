@@ -22,7 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-.npmrc
+# .npmrc  (tracked - no secrets, just public registry config)
 
 backup/
 .env
